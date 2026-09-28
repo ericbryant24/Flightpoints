@@ -36,6 +36,7 @@ test('searches end to end', async () => {
   const body = await res.json();
   assert.ok(body.results.length > 0);
   assert.ok(body.results.every((r) => r.cabin === 'business' && r.citiPoints >= r.miles));
+  assert.ok(body.results.every((r) => /^[A-Z0-9]{2}\d+$/.test(r.flightNumbers[0])));
 });
 
 test('returns 400 for invalid searches', async () => {

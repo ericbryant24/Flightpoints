@@ -45,6 +45,7 @@ transferring. Ratios live in `server/data/citi.js`.
 |---|---|---|
 | `PORT` | `4310` | Local port (server only listens on 127.0.0.1) |
 | `FP_BROWSER_CHANNEL` | *(Playwright Chromium)* | Set to `chrome` to use your installed Google Chrome |
+| `FP_CHROMIUM_PATH` | *(none)* | Path to a specific Chromium/Chrome executable |
 | `FP_HEADLESS` | `0` | `1` hides the browser (airlines block this more often) |
 | `FP_CAPTURE` | `0` | `1` saves each airline's raw response for debugging |
 | `FP_DATA_DIR` | `~/.flightpoints` | Browser profile and captures (outside the repo) |

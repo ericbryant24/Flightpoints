@@ -29,7 +29,7 @@ export default {
       const depart = `${date}T${String(hour).padStart(2, '0')}:15:00`;
       const arriveHour = (hour + 7) % 24;
       const arrive = `${date}T${String(arriveHour).padStart(2, '0')}:40:00`;
-      const number = 100 + ((s >> i) % 800);
+      const number = 100 + ((s >>> i) % 800);
       return {
         ...makeResult({
           program: p.program,

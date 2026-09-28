@@ -17,6 +17,7 @@ function getContext() {
     chromium.launchPersistentContext(PROFILE_DIR, {
       headless: process.env.FP_HEADLESS === '1',
       channel: process.env.FP_BROWSER_CHANNEL || undefined,
+      executablePath: process.env.FP_CHROMIUM_PATH || undefined,
       viewport: null,
     }),
   );

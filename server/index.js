@@ -50,6 +50,10 @@ export function createApp({ adapters = defaultAdapters(), runtime = browserRunti
         res.writeHead(200, { 'content-type': CONTENT_TYPES[extname(file)] });
         return res.end(body);
       }
+      if (req.method === 'GET' && pathname === '/favicon.ico') {
+        res.writeHead(204);
+        return res.end();
+      }
       if (req.method === 'GET' && pathname === '/api/programs') {
         return sendJson(res, 200, {
           demo: adapters.some((a) => a.demo),
