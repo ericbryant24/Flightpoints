@@ -1,0 +1,17 @@
+{
+  "currency": "USD",
+  "itinerary": [
+    {
+      "id": "1",
+      "segments": [
+        { "from": "JFK", "to": "LAX", "depart": "2026-11-02T08:00:00-05:00", "arrive": "2026-11-02T11:25:00-08:00", "flightno": "23", "operatingAirlineCode": "B6", "aircraft": "Airbus A321" }
+      ],
+      "bundles": [
+        { "code": "BlueBasic", "cabinclass": "Y", "points": "9800", "fareTax": "5.60", "status": "AVAILABLE" },
+        { "code": "Blue", "cabinclass": "Y", "points": "11900", "fareTax": "5.60", "status": "AVAILABLE" },
+        { "code": "MINT", "cabinclass": "J", "points": "52000", "fareTax": "5.60", "status": "AVAILABLE" },
+        { "code": "BlueExtra", "cabinclass": "Y", "points": "N/A", "fareTax": "5.60", "status": "NOT_AVAILABLE" }
+      ]
+    }
+  ]
+}

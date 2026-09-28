@@ -1,0 +1,18 @@
+{
+  "name": "flightpoints",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local award-flight search that prices results in Citi ThankYou points",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "demo": "FP_DEMO=1 node server/index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}

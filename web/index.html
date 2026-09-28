@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flightpoints</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Flightpoints</h1>
+      <p class="sub">Award flights priced in Citi ThankYou points</p>
+      <p id="demo-banner" class="banner" hidden>Demo mode: these results are fake.</p>
+    </header>
+
+    <main>
+      <form id="search">
+        <div class="fields">
+          <label>From <input name="origin" required maxlength="3" placeholder="JFK" autocomplete="off" /></label>
+          <label>To <input name="destination" required maxlength="3" placeholder="LHR" autocomplete="off" /></label>
+          <label>Date <input name="date" type="date" required /></label>
+          <label>Cabin
+            <select name="cabin">
+              <option value="any">Any</option>
+              <option value="economy">Economy</option>
+              <option value="premium">Premium economy</option>
+              <option value="business">Business</option>
+              <option value="first">First</option>
+            </select>
+          </label>
+          <label>Citi balance <input name="balance" type="number" min="0" step="1000" placeholder="e.g. 80000" /></label>
+        </div>
+        <fieldset id="programs">
+          <legend>Search live</legend>
+        </fieldset>
+        <button type="submit">Search</button>
+      </form>
+
+      <section id="status" aria-live="polite"></section>
+
+      <section id="results-section" hidden>
+        <h2>Results</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Flight</th>
+                <th>Times</th>
+                <th>Cabin</th>
+                <th>Program</th>
+                <th class="num">Miles</th>
+                <th class="num">Taxes</th>
+                <th class="num">Citi points</th>
+              </tr>
+            </thead>
+            <tbody id="results"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="links-section" hidden>
+        <h2>Search manually</h2>
+        <p class="sub">Programs without live search. Citi ratio shown as ThankYou&nbsp;:&nbsp;partner.</p>
+        <ul id="links"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

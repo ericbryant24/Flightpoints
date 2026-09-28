@@ -1,0 +1,45 @@
+{
+  "error": "",
+  "slices": [
+    {
+      "segments": [
+        {
+          "flight": { "carrierCode": "AA", "flightNumber": "100" },
+          "origin": { "code": "JFK" },
+          "destination": { "code": "LHR" },
+          "departureDateTime": "2026-11-02T18:30:00.000-05:00",
+          "arrivalDateTime": "2026-11-03T06:45:00.000+00:00",
+          "legs": [{ "aircraft": { "name": "Boeing 777-300ER" } }]
+        }
+      ],
+      "pricingDetail": [
+        { "productType": "COACH", "productAvailable": true, "perPassengerAwardPoints": 30000, "perPassengerTaxesAndFees": { "amount": 205.6, "currency": "USD" }, "seatsRemaining": 7 },
+        { "productType": "BUSINESS", "productAvailable": true, "perPassengerAwardPoints": 57500, "perPassengerTaxesAndFees": { "amount": 205.6, "currency": "USD" }, "seatsRemaining": 2 },
+        { "productType": "FIRST", "productAvailable": false, "perPassengerAwardPoints": 0 }
+      ]
+    },
+    {
+      "segments": [
+        {
+          "flight": { "carrierCode": "AA", "flightNumber": "2012" },
+          "origin": { "code": "JFK" },
+          "destination": { "code": "DFW" },
+          "departureDateTime": "2026-11-02T07:00:00.000-05:00",
+          "arrivalDateTime": "2026-11-02T10:05:00.000-06:00",
+          "legs": []
+        },
+        {
+          "flight": { "carrierCode": "BA", "flightNumber": "192" },
+          "origin": { "code": "DFW" },
+          "destination": { "code": "LHR" },
+          "departureDateTime": "2026-11-02T16:40:00.000-06:00",
+          "arrivalDateTime": "2026-11-03T07:20:00.000+00:00",
+          "legs": []
+        }
+      ],
+      "pricingDetail": [
+        { "productType": "PREMIUM_ECONOMY", "productAvailable": true, "perPassengerAwardPoints": 40000, "perPassengerTaxesAndFees": { "amount": 480.1, "currency": "USD" } }
+      ]
+    }
+  ]
+}
